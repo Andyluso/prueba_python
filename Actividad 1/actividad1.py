@@ -16,3 +16,24 @@ print("caja 5:", type(caja5))
 print("caja 6:", type(caja6))
 print("caja 7:", type(caja7))
 print("caja 8:", type(caja8))
+
+#Actividad de int
+años_perro = 7
+años_gato = 6
+
+nombre = input("Cual es tu nombre? ")
+edad_humana = int(input("¿Que edad tiene tu mascota en años humanos? "))
+tipo_mascota = input("Tu mascota es perro o gato? ").lower()
+
+if tipo_mascota == "perro":
+    edad_mascota = edad_humana * años_perro
+
+elif tipo_mascota == "gato":
+    edad_mascota = edad_humana * años_gato
+
+else:
+    print("No se reconoce el tipo de mascota, coloca en minuscola perro o gato")
+
+   
+if edad_mascota:
+        print(f"{nombre}, tu {tipo_mascota} tiene {edad_mascota} años de edad de {tipo_mascota}")
